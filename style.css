@@ -1,0 +1,116 @@
+ * {
+    box-sizing: border-box;
+ }
+
+
+body {
+    background: url('/images/bg3.png') center;
+    background-size: cover;
+    font-family: serif;
+    text-align: center;
+    min-height: 90vh;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#container {
+    margin: 5% auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.border{
+    color: #ffffffb0;
+    background-color: #ffffff21;
+    width: 500px;
+    border-radius: 50%;
+    padding: 2rem;
+    box-shadow: 0 15px 40px -20px black;
+}
+
+.box {
+    display: inline-block;
+    border: 1px solid gray;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 5px;
+    margin-left: -35px;
+    
+}
+
+.top {
+    border-top: none;
+}
+
+.bottom {
+    border-bottom: none;
+}
+
+.left {
+    border-left: none;
+}
+
+.right {
+    border-right: none;
+}
+
+.alert{
+    height: 75px;
+    width: 125px;
+    display: inline-block;
+    background: whitesmoke;
+    position: relative;
+    z-index: 10;
+    margin-top: -50%;
+    border-radius: 20px;
+    box-shadow: 0 0 75px 2px dimgray;
+    animation: larger 0.5s;
+    animation-fill-mode: forwards;
+    box-sizing: content-box;
+    padding: 30px;
+    bottom: 50px;
+    top: 0;
+}
+
+button{
+    background: dimgray;
+    border-radius: 2px;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+
+button:focus{
+    background: #ffffff21;
+}
+
+.activeBox{
+    background: silver;
+}
+
+@keyframes larger{
+    from{
+        height: 75px;
+        width: 125px;
+    }
+    to{
+        height: 100px;
+        width: 250px;
+    }
+}
